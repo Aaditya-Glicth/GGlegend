@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    GGLEGENDHISTORY
+    </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GGLEGENDHISTORY</title>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background: linear-gradient(135deg, #f8ffae 0%, #43cea2 100%);
+                font-family: 'Quicksand', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                animation: fadeIn 2s;
+            }
+            h1 {
+                font-family: 'Pacifico', cursive;
+                color: #ff6f91;
+                font-size: 3rem;
+                margin-top: 40px;
+                letter-spacing: 2px;
+                text-shadow: 2px 2px 8px #fff5;
+                animation: popIn 1s;
+            }
+            .history-container {
+                background: rgba(255,255,255,0.85);
+                border-radius: 24px;
+                box-shadow: 0 8px 32px rgba(67,206,162,0.15);
+                padding: 32px 28px;
+                max-width: 420px;
+                margin: 32px auto;
+                animation: slideUp 1.2s;
+            }
+            .moment {
+                margin-bottom: 24px;
+                padding: 18px 16px;
+                border-left: 6px solid #43cea2;
+                background: #fff8;
+                border-radius: 12px;
+                position: relative;
+                transition: transform 0.3s;
+            }
+            .moment:last-child {
+                margin-bottom: 0;
+            }
+            .moment:hover {
+                transform: scale(1.03) rotate(-1deg);
+                box-shadow: 0 4px 16px #43cea255;
+            }
+            .happy {
+                color: #43cea2;
+                font-weight: bold;
+                animation: happyPulse 1.5s infinite alternate;
+            }
+            .sad {
+                color: #ff6f91;
+                font-weight: bold;
+                animation: sadShake 1.5s infinite alternate;
+            }
+            .friend {
+                color: #f9a826;
+                font-weight: bold;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0;}
+                to { opacity: 1;}
+            }
+            @keyframes popIn {
+                0% { transform: scale(0.7);}
+                100% { transform: scale(1);}
+            }
+            @keyframes slideUp {
+                from { transform: translateY(60px); opacity: 0;}
+                to { transform: translateY(0); opacity: 1;}
+            }
+            @keyframes happyPulse {
+                from { text-shadow: 0 0 8px #43cea2;}
+                to { text-shadow: 0 0 24px #43cea2;}
+            }
+            @keyframes sadShake {
+                0% { transform: translateX(0);}
+                25% { transform: translateX(-2px);}
+                50% { transform: translateX(2px);}
+                75% { transform: translateX(-2px);}
+                100% { transform: translateX(0);}
+            }
+            .cute-emoji {
+                font-size: 2rem;
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>GGLEGEND's History</h1>
+        <div class="history-container">
+            <div class="moment happy">
+                <span class="cute-emoji">🌟</span>
+                In <b>March 2024</b>, <b>GGLEGEND</b> started playing Roblox!<br>
+                It was the beginning of many <span class="happy">happy adventures</span> and fun times.
+            </div>
+            <div class="moment">
+                <span class="cute-emoji">🎮</span>
+                GGLEGEND met <span class="friend">AdityaCLK</span>, and together they explored new games, Played Blox Fruits, and laughed a lot!
+            </div>
+            <div class="moment happy">
+                <span class="cute-emoji">💖</span>
+                There were so many <span class="happy">joyful moments</span> and memories made with friends.
+            </div>
+            <div class="moment sad">
+                <span class="cute-emoji">😢</span>
+                But in <b>April 2025</b>, something sad happened...<br>
+                GGLEGEND's account got <span class="sad">hacked</span> and never came back.
+            </div>
+            <div class="moment">
+                <span class="cute-emoji">🌈</span>
+                Even though the journey ended, the <span class="happy">happy memories</span> with <span class="friend">AdityaCLK</span> will always be remembered!
+            </div>
+        </div>
+    </body>
+</html>
